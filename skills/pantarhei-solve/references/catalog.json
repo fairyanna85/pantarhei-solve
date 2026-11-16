@@ -1,0 +1,1524 @@
+{
+ "skill": "pantarhei-solve",
+ "schema": "core/schema/method.schema.json",
+ "count": 37,
+ "records": [
+  {
+   "slug": "solve.issue-tree",
+   "name": "Issue tree (MECE)",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Barbara Minto",
+    "work": "The Pyramid Principle",
+    "type": "industry",
+    "year": 1987
+   },
+   "source_verified": false,
+   "summary": "Break the question into sub-questions that are mutually exclusive and collectively exhaustive, then repeat down to questions small enough to answer with data.",
+   "key_question": "Do my branches overlap, and do they cover everything?",
+   "status": "complete",
+   "tension_with": [
+    "frame.reframing-canvas",
+    "frame.polarity",
+    "solve.hypothesis-driven"
+   ],
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "break this problem down",
+    "structure this question",
+    "where do I even start with this",
+    "too many factors to keep in my head"
+   ],
+   "produces": "a tree two or three levels deep whose branches do not overlap and together cover the question",
+   "failure_mode": "Branches that overlap or leave out a whole category, so the analysis double-counts or misses the cause.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the question at the top as one specific question.",
+    "Split it into three to five sub-questions.",
+    "Check the split: no overlap between branches, nothing left out.",
+    "Split each branch again until each leaf can be answered with data or one analysis.",
+    "Mark the leaves that matter most and answer those first."
+   ],
+   "pairs_with": [
+    "solve.hypothesis-driven",
+    "solve.fermi"
+   ]
+  },
+  {
+   "slug": "solve.hypothesis-driven",
+   "name": "Hypothesis-driven problem solving",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Ethan Rasiel; Charles Conn & Robert McLean",
+    "work": "The McKinsey Way; Bulletproof Problem Solving",
+    "type": "industry",
+    "year": "1999; 2018"
+   },
+   "source_verified": false,
+   "summary": "State the most likely answer early, then design the analysis to prove or kill it. Faster than boiling the ocean, provided the hypothesis is genuinely open to being killed.",
+   "key_question": "What is my best current answer, and what analysis would kill it?",
+   "status": "complete",
+   "tension_with": [
+    "solve.issue-tree"
+   ],
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what's probably going on here",
+    "I need an answer fast",
+    "too much analysis, no answer",
+    "what should we test first"
+   ],
+   "produces": "a stated hypothesis, the analyses that would kill it, and the result of the first one",
+   "failure_mode": "Defending the early hypothesis instead of trying to kill it.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write your best guess at the answer in one sentence.",
+    "List what would have to be true for it to hold.",
+    "For each, name the analysis that would show it false.",
+    "Run the cheapest killing analysis first.",
+    "Keep, revise or replace the hypothesis and repeat."
+   ],
+   "pairs_with": [
+    "solve.smallest-test",
+    "challenge.ach"
+   ]
+  },
+  {
+   "slug": "solve.driver-tree",
+   "name": "Driver tree",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "DuPont analysis tradition",
+    "work": "DuPont return-on-equity decomposition",
+    "type": "industry",
+    "year": 1914
+   },
+   "source_verified": false,
+   "summary": "Decompose a metric into the arithmetic drivers that produce it (revenue = volume × price; volume = traffic × conversion). Locates where a change actually originates.",
+   "key_question": "Which arithmetic driver of this number actually moved?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "why did this number change",
+    "revenue dropped and I don't know why",
+    "which lever moves this metric",
+    "break down this KPI"
+   ],
+   "produces": "a tree of arithmetic drivers for the metric, with the driver that changed marked",
+   "failure_mode": "Mixing drivers that do not multiply or add to the parent, so the tree does not reconcile.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the metric at the top.",
+    "Split it into the drivers that produce it by addition or multiplication.",
+    "Check the split reconciles: the drivers must recompute the parent.",
+    "Repeat until each driver is something you can observe.",
+    "Compare current and past values to locate where the change originates."
+   ],
+   "pairs_with": [
+    "solve.issue-tree",
+    "solve.five-whys"
+   ]
+  },
+  {
+   "slug": "solve.scqa",
+   "name": "Situation, complication, question, answer",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Barbara Minto",
+    "work": "The Pyramid Principle",
+    "type": "industry",
+    "year": 1987
+   },
+   "source_verified": false,
+   "summary": "State the stable situation, the complication that disturbed it, the question that raises, and the answer. Tests whether the problem and its solution actually line up.",
+   "key_question": "Does my answer actually respond to the complication I described?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "does my problem match my solution",
+    "structure this recommendation",
+    "frame the problem for my boss",
+    "what question am I actually answering"
+   ],
+   "produces": "four lines: situation, complication, question, answer, checked for fit",
+   "failure_mode": "A complication that the answer does not address.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write the situation everyone agrees on.",
+    "Write the complication that disturbed it.",
+    "Write the question the complication raises.",
+    "Write your answer to that question.",
+    "Check that the answer resolves the complication, not a different one."
+   ],
+   "pairs_with": [
+    "solve.issue-tree",
+    "solve.hypothesis-driven"
+   ]
+  },
+  {
+   "slug": "solve.two-by-two",
+   "name": "Two-by-two",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Consulting tradition (e.g. BCG growth-share matrix)",
+    "work": "BCG Perspectives",
+    "type": "industry",
+    "year": 1970
+   },
+   "source_verified": false,
+   "summary": "Pick the two dimensions that matter most and place the options on them. Forces a choice about which two dimensions matter and exposes empty quadrants.",
+   "key_question": "Which two dimensions really separate these options?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "compare these options on two things",
+    "plot these on a matrix",
+    "which of these should we prioritise",
+    "map the landscape"
+   ],
+   "produces": "a two-by-two grid with options placed and the empty quadrants noted",
+   "failure_mode": "Choosing two dimensions that are correlated, so everything sits on a diagonal.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "List the dimensions that matter and pick the two most important and independent.",
+    "Draw the grid and label each half of each axis.",
+    "Place every option.",
+    "Look at the empty quadrants and ask why nothing is there.",
+    "Decide what the position of each option implies."
+   ],
+   "pairs_with": [
+    "decide.weighted-criteria",
+    "create.morphological-box"
+   ]
+  },
+  {
+   "slug": "solve.value-chain",
+   "name": "Value chain",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Michael Porter",
+    "work": "Competitive Advantage",
+    "type": "academic",
+    "year": 1985
+   },
+   "source_verified": false,
+   "summary": "Lay out the sequence of activities that create value and their costs. Shows where the problem sits in the flow and where advantage or waste concentrates.",
+   "key_question": "Where in the chain of activities is value created or lost?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "where are we losing money",
+    "where is the waste in our operations",
+    "where does our advantage come from",
+    "map our activities"
+   ],
+   "produces": "a sequence of activities with cost and value for each and the problem located in it",
+   "failure_mode": "Mapping activities without their costs, so the map shows nothing about where value concentrates.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "solve.theory-of-constraints",
+    "solve.driver-tree"
+   ]
+  },
+  {
+   "slug": "solve.seven-s",
+   "name": "Seven elements of an organisation",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Robert Waterman, Tom Peters, Julien Phillips",
+    "work": "Structure Is Not Organization (Business Horizons)",
+    "type": "industry",
+    "year": 1980,
+    "note": "Known as the McKinsey 7S framework."
+   },
+   "source_verified": false,
+   "summary": "Strategy, structure, systems, shared values, style, staff and skills interact. A fix to one (usually structure) fails when the others pull the other way.",
+   "key_question": "Which of the seven elements is pulling against the change?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "our reorganisation didn't work",
+    "why won't this change stick",
+    "diagnose this organisation",
+    "the strategy is right but nothing happens"
+   ],
+   "produces": "a table of the seven elements with where each supports or blocks the change",
+   "failure_mode": "Fixing the structure only and ignoring the shared values and style pulling the other way.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "solve.causal-loops",
+    "solve.leverage-points"
+   ]
+  },
+  {
+   "slug": "solve.five-whys",
+   "name": "Five whys",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Taiichi Ohno",
+    "work": "Toyota Production System",
+    "type": "industry",
+    "year": 1988
+   },
+   "source_verified": false,
+   "summary": "Ask why the problem occurred, then why that cause occurred, around five times, until the answer is a process you can change rather than a person to blame.",
+   "key_question": "Is my last 'why' a process I can change, or a person I am blaming?",
+   "status": "complete",
+   "tension_with": [
+    "solve.fishbone"
+   ],
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "why did this happen",
+    "find the root cause",
+    "this failure keeps repeating",
+    "what caused the outage"
+   ],
+   "produces": "a chain of causes ending in a process that can be changed",
+   "failure_mode": "Stopping at a person to blame, or following only one chain when several causes contributed.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "State the problem as an observed fact.",
+    "Ask why it happened and write the answer.",
+    "Ask why that answer occurred.",
+    "Repeat until the answer is a process or condition you can change, usually around five times.",
+    "Check the chain backwards: does each cause actually produce the next?"
+   ],
+   "pairs_with": [
+    "solve.fishbone",
+    "solve.pdca"
+   ]
+  },
+  {
+   "slug": "solve.fishbone",
+   "name": "Fishbone diagram",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Kaoru Ishikawa",
+    "work": "Guide to Quality Control",
+    "type": "industry",
+    "year": 1968
+   },
+   "source_verified": false,
+   "summary": "Lay out candidate causes by category (people, process, materials, equipment, environment, measurement) before choosing one. Counters the single-chain bias of five whys.",
+   "key_question": "Have I considered causes in every category, not only the first one I found?",
+   "status": "complete",
+   "aka": [
+    "Ishikawa diagram",
+    "cause-and-effect diagram"
+   ],
+   "tension_with": [
+    "solve.five-whys"
+   ],
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what could be causing this",
+    "list possible causes",
+    "too many possible reasons",
+    "root cause analysis with the team"
+   ],
+   "produces": "a cause diagram with candidates under each category and the most likely ones marked for testing",
+   "failure_mode": "Treating every branch as a confirmed cause instead of a candidate to test.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Write the effect at the head of the diagram.",
+    "Draw the categories: people, process, materials, equipment, environment, measurement.",
+    "Under each, list candidate causes.",
+    "Add sub-causes where a candidate has its own causes.",
+    "Mark the most likely candidates and choose a test for each."
+   ],
+   "pairs_with": [
+    "solve.five-whys",
+    "solve.is-is-not"
+   ]
+  },
+  {
+   "slug": "solve.a3",
+   "name": "A3 report",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Toyota; Durward Sobek & Art Smalley",
+    "work": "Understanding A3 Thinking",
+    "type": "industry",
+    "year": 2008
+   },
+   "source_verified": false,
+   "summary": "One sheet: background, current condition, goal, root-cause analysis, countermeasures, plan, follow-up. The size limit forces clarity and the sequence forces diagnosis before solution.",
+   "key_question": "Can the whole problem, cause and countermeasure fit on one page?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "review"
+   ],
+   "use_when": [
+    "write up this problem on one page",
+    "structure our improvement project",
+    "present a problem and fix to management",
+    "lean problem solving"
+   ],
+   "produces": "a single page covering background, current state, goal, root cause, countermeasures, plan and follow-up",
+   "failure_mode": "Filling in the countermeasures box before the root-cause box.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Write the background: why this problem matters now.",
+    "Describe the current condition with data.",
+    "State the target condition.",
+    "Analyse root causes.",
+    "Propose countermeasures linked to each cause.",
+    "Write the implementation plan with owners and dates.",
+    "Plan the follow-up check."
+   ],
+   "pairs_with": [
+    "solve.pdca",
+    "solve.five-whys"
+   ]
+  },
+  {
+   "slug": "solve.is-is-not",
+   "name": "Is / is not analysis",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Charles Kepner & Benjamin Tregoe",
+    "work": "The Rational Manager",
+    "type": "industry",
+    "year": 1965
+   },
+   "source_verified": false,
+   "summary": "Specify where, when and to what extent the problem occurs and, for each, where it could occur but does not. The true cause must explain both columns.",
+   "key_question": "Where could this happen but does not, and what is different there?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "the bug only happens sometimes",
+    "it works here but not there",
+    "narrow down the cause",
+    "what's different about the failing cases"
+   ],
+   "produces": "a two-column specification of where, when and how much the problem is and is not, and the distinctions between them",
+   "failure_mode": "Leaving the 'is not' column empty, which removes the method's discriminating power.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Describe what the problem is and what it could be but is not.",
+    "Describe where it occurs and where it could but does not.",
+    "Describe when it occurs and when it could but does not.",
+    "Describe how much: extent and trend, against what it could be.",
+    "List what is distinctive about the 'is' side.",
+    "Test each candidate cause: it must explain both columns."
+   ],
+   "pairs_with": [
+    "solve.differential-diagnosis",
+    "solve.smallest-test"
+   ]
+  },
+  {
+   "slug": "solve.theory-of-constraints",
+   "name": "Five focusing steps",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Eliyahu Goldratt",
+    "work": "The Goal",
+    "type": "industry",
+    "year": 1984,
+    "note": "Complements mm.bottlenecks with a procedure."
+   },
+   "source_verified": false,
+   "summary": "Identify the system's constraint, exploit it, subordinate everything else to it, elevate it, then repeat when it moves. Improving anything other than the constraint is an illusion of progress.",
+   "key_question": "Where is the single constraint, and is everything else subordinated to it?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what's holding back our throughput",
+    "where's the bottleneck",
+    "we improved everything and nothing changed",
+    "speed up this process"
+   ],
+   "produces": "the named constraint and the actions to exploit, subordinate to and elevate it",
+   "failure_mode": "Improving non-constraint steps and reporting local gains as system gains.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Identify the constraint: the step that limits the whole system's output.",
+    "Exploit it: get the most out of it with what you have.",
+    "Subordinate everything else to the constraint's pace.",
+    "Elevate it: add capacity if still needed.",
+    "When the constraint moves, return to step one."
+   ],
+   "pairs_with": [
+    "solve.value-chain",
+    "solve.pdca"
+   ]
+  },
+  {
+   "slug": "solve.current-reality-tree",
+   "name": "Current reality tree",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Eliyahu Goldratt",
+    "work": "It's Not Luck",
+    "type": "industry",
+    "year": 1994
+   },
+   "source_verified": false,
+   "summary": "Connect undesirable effects through if-then logic until a few root causes explain most of them. Shows which cause, if removed, clears the most symptoms.",
+   "key_question": "Which single cause explains most of the symptoms?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "we have lots of problems, which matter",
+    "are these symptoms related",
+    "find the core problem",
+    "everything is going wrong at once"
+   ],
+   "produces": "a logic tree linking the undesirable effects to a few root causes, with the core cause marked",
+   "failure_mode": "If-then links that are asserted, not checked, so the tree is a story rather than logic.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "List five to ten undesirable effects you observe.",
+    "Connect them with if-then statements.",
+    "Add the missing causes needed to make each link true.",
+    "Check each link: is the cause sufficient, is there another cause?",
+    "Find the cause that leads to most of the effects."
+   ],
+   "pairs_with": [
+    "solve.theory-of-constraints",
+    "solve.causal-loops"
+   ]
+  },
+  {
+   "slug": "solve.leverage-points",
+   "name": "Leverage points",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Donella Meadows",
+    "work": "Leverage Points: Places to Intervene in a System",
+    "type": "practitioner",
+    "year": 1999
+   },
+   "source_verified": false,
+   "summary": "Twelve places to intervene in a system, from weak (parameters, numbers) to strong (rules, goals, paradigm). Most effort goes into the weakest.",
+   "key_question": "Am I adjusting a number when I should be changing a rule or a goal?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "where should we intervene",
+    "our changes have no effect",
+    "what would really shift this system",
+    "small change, big effect"
+   ],
+   "produces": "candidate interventions placed on the scale from parameters to paradigms, with the strongest feasible one marked",
+   "failure_mode": "Choosing a high leverage point that cannot actually be moved by the people involved.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "solve.causal-loops",
+    "frame.iceberg"
+   ]
+  },
+  {
+   "slug": "solve.causal-loops",
+   "name": "Causal loop diagram",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Jay Forrester; Peter Senge",
+    "work": "Industrial Dynamics; The Fifth Discipline",
+    "type": "academic",
+    "year": "1961; 1990"
+   },
+   "source_verified": false,
+   "summary": "Draw variables and the arrows between them, marking reinforcing and balancing loops. Explains why fixes backfire and why problems persist.",
+   "key_question": "Which loop keeps this problem alive?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "why do our fixes backfire",
+    "this problem keeps reinforcing itself",
+    "map the dynamics",
+    "vicious cycle"
+   ],
+   "produces": "a causal loop diagram with reinforcing and balancing loops labelled and the dominant loop marked",
+   "failure_mode": "Drawing every possible arrow until the diagram explains everything and predicts nothing.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the main variables, as quantities that can rise or fall.",
+    "Draw arrows for causal links and mark each as same or opposite direction.",
+    "Find the closed loops and mark each as reinforcing or balancing.",
+    "Add delays where they exist.",
+    "Identify the loop that dominates now and where an intervention would weaken it."
+   ],
+   "pairs_with": [
+    "solve.leverage-points",
+    "frame.iceberg"
+   ]
+  },
+  {
+   "slug": "solve.polya",
+   "name": "Understand, plan, carry out, look back",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "George Pólya",
+    "work": "How to Solve It",
+    "type": "academic",
+    "year": 1945
+   },
+   "source_verified": false,
+   "summary": "Four phases, each with its own questions: what is the unknown and what are the conditions; have I seen a related problem; check each step; can the result be checked and reused.",
+   "key_question": "What exactly is the unknown, and what are the conditions?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "review"
+   ],
+   "use_when": [
+    "I'm stuck on this problem",
+    "how do I approach a hard problem",
+    "work through this step by step",
+    "solve this puzzle"
+   ],
+   "produces": "the unknown, data and conditions written out, a plan, the worked solution and a check",
+   "failure_mode": "Skipping the first phase and starting calculations before the unknown is clear.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Understand: what is the unknown, what is given, what are the conditions?",
+    "Plan: have you seen a related problem, can you use its method?",
+    "Carry out the plan, checking each step.",
+    "Look back: check the result and ask whether the method can be reused."
+   ],
+   "pairs_with": [
+    "solve.simpler-problem",
+    "solve.work-backward"
+   ]
+  },
+  {
+   "slug": "solve.simpler-problem",
+   "name": "Solve a simpler problem",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "George Pólya",
+    "work": "How to Solve It",
+    "type": "academic",
+    "year": 1945
+   },
+   "source_verified": false,
+   "summary": "When stuck, drop a condition, take a special case, or generalise. The answer to the simpler problem usually reveals the path to the real one.",
+   "key_question": "Which condition could I drop to make this solvable, and what does that solution teach me?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "this is too hard to solve directly",
+    "I'm completely stuck",
+    "try an easier version",
+    "special case first"
+   ],
+   "produces": "a simpler variant of the problem, its solution and what it suggests for the original",
+   "failure_mode": "Solving the simpler problem and never returning to the real one.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Drop one condition of the problem.",
+    "Or take a special case: small numbers, one customer, one day.",
+    "Or generalise to a broader problem that may be easier.",
+    "Solve the simpler version.",
+    "Ask what the solution reveals about the original."
+   ],
+   "pairs_with": [
+    "solve.polya",
+    "solve.work-backward"
+   ]
+  },
+  {
+   "slug": "solve.work-backward",
+   "name": "Work backward",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "George Pólya; Amazon (Colin Bryar & Bill Carr)",
+    "work": "How to Solve It; Working Backwards",
+    "type": "industry",
+    "year": "1945; 2021"
+   },
+   "source_verified": false,
+   "summary": "Start from the finished result (a press release, the solved state) and trace the steps backwards to the present.",
+   "key_question": "If this were already solved, what would the step just before the end have been?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "start from the end goal",
+    "how do we get from here to there",
+    "plan backwards",
+    "write the press release first"
+   ],
+   "produces": "the finished end state described, and the chain of steps from it back to the present",
+   "failure_mode": "Describing a vague end state, so the backward steps are equally vague.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Describe the finished result concretely, as if it already exists.",
+    "Ask what must have happened just before.",
+    "Repeat until you reach a step you can take today.",
+    "Reverse the chain into a forward plan."
+   ],
+   "pairs_with": [
+    "solve.polya",
+    "decide.kill-criteria"
+   ]
+  },
+  {
+   "slug": "solve.fermi",
+   "name": "Fermi estimate",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Enrico Fermi; Philip Tetlock",
+    "work": "Superforecasting ('Fermi-ize')",
+    "type": "academic",
+    "year": 2015
+   },
+   "source_verified": false,
+   "summary": "Break an unknown quantity into factors you can bound, estimate each, multiply. Errors partly cancel; the structure shows which factor dominates the uncertainty.",
+   "key_question": "Which factor in this estimate carries most of the uncertainty?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "estimate this quickly",
+    "how big is this market",
+    "I need a rough number",
+    "is this even plausible"
+   ],
+   "produces": "an estimate with its factors, the range for each, and the factor that dominates the uncertainty",
+   "failure_mode": "Using factors that are no easier to estimate than the original quantity.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write the quantity to estimate.",
+    "Break it into factors that multiply to it.",
+    "Estimate each factor with a low and high bound.",
+    "Multiply to get a range.",
+    "Identify which factor contributes most to the width of the range and refine that one."
+   ],
+   "pairs_with": [
+    "decide.expected-value",
+    "solve.driver-tree"
+   ]
+  },
+  {
+   "slug": "solve.abduction",
+   "name": "Inference to the best explanation",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Charles Sanders Peirce",
+    "work": "Lectures on Pragmatism",
+    "type": "academic",
+    "year": 1903
+   },
+   "source_verified": false,
+   "summary": "From a surprising fact, infer the hypothesis that would make it unsurprising. Generates the candidate causes that deduction and testing then check.",
+   "key_question": "What hypothesis would make this surprising fact expected?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what could explain this",
+    "this result surprises me",
+    "come up with possible explanations",
+    "why would this happen"
+   ],
+   "produces": "a list of candidate explanations for the surprising fact, ranked by how well each would make it expected",
+   "failure_mode": "Stopping at the first explanation that fits, without generating rivals.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "challenge.ach",
+    "solve.differential-diagnosis"
+   ]
+  },
+  {
+   "slug": "solve.differential-diagnosis",
+   "name": "Differential diagnosis",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Clinical medicine",
+    "work": "Medical diagnostic practice",
+    "type": "tradition"
+   },
+   "source_verified": false,
+   "summary": "List every condition that could produce the symptoms, then order tests that discriminate between them, starting with the dangerous and the common.",
+   "key_question": "Which test would tell my top two candidates apart?",
+   "status": "complete",
+   "stages": [
+    "decompose"
+   ],
+   "use_when": [
+    "what could be causing these symptoms",
+    "rule out possible causes",
+    "several explanations fit",
+    "which test would tell them apart"
+   ],
+   "produces": "a ranked list of candidate causes with the test that discriminates between the top ones",
+   "failure_mode": "Ordering tests by convenience and leaving the dangerous candidate untested.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List every cause that could produce the observed symptoms.",
+    "Rank by likelihood and by danger if missed.",
+    "For the top candidates, find tests that would come out differently for each.",
+    "Run the most discriminating test first, starting with dangerous and common causes.",
+    "Update the list after each result."
+   ],
+   "pairs_with": [
+    "solve.is-is-not",
+    "solve.smallest-test"
+   ]
+  },
+  {
+   "slug": "solve.smallest-test",
+   "name": "Smallest test",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Eric Ries; scientific method",
+    "work": "The Lean Startup",
+    "type": "industry",
+    "year": 2011
+   },
+   "source_verified": false,
+   "summary": "Find the cheapest experiment that would change what you do next and run it before building anything larger.",
+   "key_question": "What is the cheapest test whose result would change my plan?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "execute"
+   ],
+   "use_when": [
+    "how can we test this cheaply",
+    "before we build the whole thing",
+    "validate this idea",
+    "what's the minimum experiment"
+   ],
+   "produces": "one experiment with its cost, the result that would change the next action, and the decision rule",
+   "failure_mode": "Running a test whose result would not change what you do next.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write the belief you are acting on.",
+    "Name the result that would make you act differently.",
+    "Design the cheapest test that could produce that result.",
+    "Write the decision rule before running it.",
+    "Run it and apply the rule."
+   ],
+   "pairs_with": [
+    "solve.pdca",
+    "challenge.update-triggers"
+   ]
+  },
+  {
+   "slug": "solve.pdca",
+   "name": "Plan, do, check, act",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Walter Shewhart; W. Edwards Deming",
+    "work": "Out of the Crisis",
+    "type": "industry",
+    "year": "1939; 1986"
+   },
+   "source_verified": false,
+   "summary": "Iterative improvement: plan a change, run it small, check results against prediction, then standardise or adjust.",
+   "key_question": "Did I predict the result before running the change?",
+   "status": "complete",
+   "stages": [
+    "execute",
+    "review"
+   ],
+   "use_when": [
+    "improve this process step by step",
+    "continuous improvement",
+    "try a change and see if it works",
+    "our fixes don't stick"
+   ],
+   "produces": "a cycle record: the planned change, the prediction, the result and the decision to standardise or adjust",
+   "failure_mode": "Skipping the check step, so changes are kept without knowing if they worked.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "Plan: describe the change and predict its effect.",
+    "Do: run it on a small scale.",
+    "Check: compare the result with the prediction.",
+    "Act: standardise the change if it worked, adjust or drop it if not.",
+    "Start the next cycle."
+   ],
+   "pairs_with": [
+    "solve.smallest-test",
+    "solve.a3"
+   ]
+  },
+  {
+   "slug": "solve.fault-tree",
+   "name": "Fault tree",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "H. A. Watson, Bell Laboratories",
+    "work": "Minuteman launch control safety study",
+    "type": "industry",
+    "year": 1962
+   },
+   "source_verified": false,
+   "summary": "Start from the failure and map the AND/OR combinations of events that could produce it. Shows single points of failure and which combinations matter.",
+   "key_question": "Which single event can cause the failure on its own?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "stress_test"
+   ],
+   "use_when": [
+    "how could this system fail",
+    "find single points of failure",
+    "safety analysis",
+    "what combination of events causes this"
+   ],
+   "produces": "a tree of AND/OR events leading to the failure, with single points of failure marked",
+   "failure_mode": "Leaving out common-cause failures that hit several branches at once.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Define the top failure event precisely.",
+    "Ask which events, alone or together, could cause it.",
+    "Join them with OR (any one is enough) or AND (all are needed).",
+    "Repeat down to basic events.",
+    "Mark events that cause the top failure on their own."
+   ],
+   "pairs_with": [
+    "solve.swiss-cheese",
+    "decide.premortem"
+   ]
+  },
+  {
+   "slug": "solve.swiss-cheese",
+   "name": "Swiss cheese model",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "James Reason",
+    "work": "Human Error",
+    "type": "academic",
+    "year": 1990
+   },
+   "source_verified": false,
+   "summary": "Failures pass through several layers of defence when holes in each line up. Look for the aligned holes, not the last person who touched it.",
+   "key_question": "Which layers of defence failed together, and why at the same time?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "stress_test"
+   ],
+   "use_when": [
+    "how did this get through all our checks",
+    "who's to blame for this incident",
+    "our safeguards failed",
+    "incident review"
+   ],
+   "produces": "a list of the defence layers involved and the hole in each that lined up",
+   "failure_mode": "Stopping at the last person who touched the work.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "solve.fault-tree",
+    "solve.five-whys"
+   ]
+  },
+  {
+   "slug": "solve.explain-it",
+   "name": "Explain it to a duck",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Andrew Hunt & David Thomas",
+    "work": "The Pragmatic Programmer",
+    "type": "practitioner",
+    "year": 1999
+   },
+   "source_verified": false,
+   "summary": "Explain the problem step by step to someone (or something) with no context. Gaps in your own understanding surface the moment you have to say them aloud.",
+   "key_question": "Can I explain each step without skipping one?",
+   "status": "complete",
+   "aka": [
+    "Rubber duck debugging"
+   ],
+   "stages": [
+    "decompose",
+    "stress_test"
+   ],
+   "use_when": [
+    "I can't find the bug",
+    "do I really understand this",
+    "explain this back to me",
+    "I'm missing something obvious"
+   ],
+   "produces": "a step-by-step explanation with the point where it broke down marked",
+   "failure_mode": "Skipping steps in the explanation because they feel obvious.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "solve.polya",
+    "solve.is-is-not"
+   ]
+  },
+  {
+   "slug": "solve.dmaic",
+   "name": "Define, measure, analyse, improve, control",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Motorola; Six Sigma",
+    "work": "Six Sigma methodology",
+    "type": "industry",
+    "year": 1986
+   },
+   "source_verified": false,
+   "summary": "A staged improvement cycle for measurable process problems; the measure and control phases prevent fixes that are never verified or that decay.",
+   "key_question": "How will I know this stayed fixed six months from now?",
+   "status": "complete",
+   "stages": [
+    "decompose",
+    "execute",
+    "review"
+   ],
+   "use_when": [
+    "reduce defects in this process",
+    "improve a measurable process",
+    "make sure the fix lasts",
+    "six sigma project"
+   ],
+   "produces": "a staged record: defined problem, baseline measure, verified cause, improvement and control plan",
+   "failure_mode": "Skipping the control phase, so the improvement decays once attention moves on.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "Define the problem, the customer and the goal.",
+    "Measure the current performance with a baseline.",
+    "Analyse the data to find and verify root causes.",
+    "Improve: design and test changes against the causes.",
+    "Control: put monitoring in place so the gain holds."
+   ],
+   "pairs_with": [
+    "solve.pdca",
+    "solve.fishbone"
+   ]
+  },
+  {
+   "slug": "challenge.ach",
+   "name": "Analysis of competing hypotheses",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Richards Heuer",
+    "work": "Psychology of Intelligence Analysis",
+    "type": "industry",
+    "year": 1999
+   },
+   "source_verified": false,
+   "summary": "List every hypothesis, list the evidence, mark each piece as consistent or inconsistent with each hypothesis. Keep the hypothesis with the least evidence against it, not the most for it.",
+   "key_question": "Which hypothesis has the least evidence against it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "which explanation fits the evidence best",
+    "several hypotheses could explain this",
+    "weigh the evidence",
+    "what's really going on"
+   ],
+   "produces": "a matrix of hypotheses against evidence with the least-contradicted hypothesis identified",
+   "failure_mode": "Counting supporting evidence instead of looking for inconsistencies.",
+   "time_cost": "deep",
+   "group": "either",
+   "steps": [
+    "List every plausible hypothesis, including ones you dislike.",
+    "List the significant evidence and arguments.",
+    "Mark each item as consistent, inconsistent or neutral with each hypothesis.",
+    "Drop evidence that fits all hypotheses equally; it does not discriminate.",
+    "Rank hypotheses by how much evidence is inconsistent with each.",
+    "Name what new evidence would most change the ranking."
+   ],
+   "pairs_with": [
+    "challenge.update-triggers",
+    "solve.differential-diagnosis"
+   ],
+   "borrowed_from": "pantarhei-challenge"
+  },
+  {
+   "slug": "challenge.update-triggers",
+   "name": "Pre-commit update triggers",
+   "kind": "principle",
+   "mode": "audit",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Philip Tetlock & Dan Gardner",
+    "work": "Superforecasting",
+    "type": "academic",
+    "year": 2015
+   },
+   "source_verified": false,
+   "summary": "Before seeing new evidence, state what result would move your estimate and by how much. Prevents re-reading any evidence as confirmation.",
+   "key_question": "What result would make me change my mind, decided before I see it?",
+   "status": "complete",
+   "stages": [
+    "stress_test"
+   ],
+   "use_when": [
+    "what would change my mind",
+    "set criteria before seeing the results",
+    "I keep reading everything as confirmation",
+    "how should this new data change my view"
+   ],
+   "produces": "a pre-registered list of results and the size of the update each would cause",
+   "failure_mode": "Writing triggers so vague that any result can be read as meeting or missing them.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "challenge.crux",
+    "decide.kill-criteria"
+   ],
+   "borrowed_from": "pantarhei-challenge"
+  },
+  {
+   "slug": "create.morphological-box",
+   "name": "Morphological box",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Fritz Zwicky",
+    "work": "Discovery, Invention, Research through the Morphological Approach",
+    "type": "academic",
+    "year": 1969,
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Zwicky_books"
+   },
+   "source_verified": true,
+   "summary": "List the independent dimensions of a solution, list options on each, then combine one option per dimension. Makes the whole design space visible and surfaces combinations nobody would have proposed.",
+   "key_question": "What are the dimensions, and which combination has nobody tried?",
+   "status": "complete",
+   "aka": [
+    "General morphological analysis",
+    "Zwicky box"
+   ],
+   "card": "Three columns, five options each. Pick a combination at random and defend it.",
+   "stages": [
+    "generate"
+   ],
+   "use_when": [
+    "I need a new product concept",
+    "there are several independent choices in this design",
+    "systematically explore all the combinations",
+    "what hasn't been tried"
+   ],
+   "steps": [
+    "List the independent dimensions of the solution (for example who, where, how, when, price).",
+    "Under each dimension write every option you can think of.",
+    "Make sure dimensions are independent of each other; merge any that are not.",
+    "Choose one option per dimension to form a concept; do this many times, including odd combinations.",
+    "Select the combinations that nobody around you would have proposed."
+   ],
+   "produces": "a grid of dimensions and options plus a list of unusual combinations",
+   "failure_mode": "Dimensions that depend on each other, which produces impossible combinations.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "create.errc-grid",
+    "create.constraint-injection"
+   ],
+   "borrowed_from": "pantarhei-brainstorm"
+  },
+  {
+   "slug": "decide.expected-value",
+   "name": "Expected value",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Probability theory (Pascal, Huygens)",
+    "work": "De Ratiociniis in Ludo Aleae",
+    "type": "academic",
+    "year": 1657
+   },
+   "source_verified": false,
+   "summary": "Multiply each outcome by its probability and add them up. Shows which option is best on average, and makes the probabilities you are assuming explicit.",
+   "key_question": "What is each option worth on average, and which probabilities am I assuming?",
+   "status": "complete",
+   "tension_with": [
+    "decide.regret-minimization",
+    "mm.margin-of-safety"
+   ],
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "what's the best bet",
+    "weigh the odds",
+    "which option pays off on average",
+    "is this gamble worth it"
+   ],
+   "produces": "a table of outcomes, probabilities and payoffs per option with the expected value of each",
+   "failure_mode": "Using made-up precise probabilities and treating the result as settled; ignoring ruinous tails.",
+   "time_cost": "medium",
+   "group": "either",
+   "pairs_with": [
+    "decide.decision-tree",
+    "decide.value-of-information"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "decide.kill-criteria",
+   "name": "Kill criteria",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Annie Duke",
+    "work": "Quit",
+    "type": "practitioner",
+    "year": 2022
+   },
+   "source_verified": false,
+   "summary": "Before committing, write the conditions and the date at which you will stop. Decided in advance, quitting does not depend on willpower in the moment.",
+   "key_question": "What would have to happen, by when, for me to stop?",
+   "status": "complete",
+   "stages": [
+    "decide",
+    "execute"
+   ],
+   "use_when": [
+    "when should I quit",
+    "how will I know to stop",
+    "set limits on this project",
+    "I keep throwing good money after bad"
+   ],
+   "produces": "written conditions and a date at which the commitment will be stopped",
+   "failure_mode": "Kill criteria so loose they will never trigger.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write what you are committing to.",
+    "Write the signals that would show it is not working.",
+    "Turn each signal into a measurable condition.",
+    "Set a date to check.",
+    "Tell someone who will hold you to it."
+   ],
+   "pairs_with": [
+    "decide.decision-journal",
+    "challenge.update-triggers"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "decide.premortem",
+   "name": "Pre-mortem",
+   "kind": "method",
+   "mode": "audit",
+   "evidence_class": "empirical",
+   "origin": {
+    "author": "Gary Klein",
+    "work": "Performing a Project Premortem (HBR)",
+    "type": "academic",
+    "year": 2007
+   },
+   "source_verified": false,
+   "summary": "Imagine it is a year later and the decision failed. Write why. Imagined certainty of failure frees people to name risks they would otherwise keep quiet.",
+   "key_question": "If this has failed a year from now, what is the most likely reason?",
+   "status": "complete",
+   "evidence_note": "Prospective hindsight increased the number of reasons generated by about 30% (Mitchell, Russo & Pennington 1989). Effect on decision outcomes less studied.",
+   "stages": [
+    "decide",
+    "stress_test"
+   ],
+   "use_when": [
+    "what could go wrong with this",
+    "before we commit",
+    "imagine this fails",
+    "find the risks"
+   ],
+   "produces": "a list of reasons the decision failed, ranked, with a mitigation for the top ones",
+   "failure_mode": "Writing generic risks instead of specific stories of failure.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Assume it is a year later and the decision has failed badly.",
+    "Everyone writes the reasons it failed, independently.",
+    "Pool the reasons and remove duplicates.",
+    "Rank by likelihood and impact.",
+    "Add mitigations or kill criteria for the top reasons."
+   ],
+   "pairs_with": [
+    "decide.kill-criteria",
+    "challenge.survival-score"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "decide.weighted-criteria",
+   "name": "Weighted criteria",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "formal",
+   "origin": {
+    "author": "Ralph Keeney & Howard Raiffa",
+    "work": "Decisions with Multiple Objectives",
+    "type": "academic",
+    "year": 1976
+   },
+   "source_verified": false,
+   "summary": "Name the criteria, weight them before scoring, score each option, sum. The value is in the weighting conversation; the total is only as good as the weights.",
+   "key_question": "Did I set the weights before I saw the scores?",
+   "status": "complete",
+   "tension_with": [
+    "decide.gut-check",
+    "decide.fast-frugal"
+   ],
+   "stages": [
+    "decide"
+   ],
+   "use_when": [
+    "compare these options",
+    "score these choices",
+    "which option is best overall",
+    "decision matrix"
+   ],
+   "produces": "a scoring table with weights set before scoring, totals, and a sensitivity check on the weights",
+   "failure_mode": "Adjusting weights after scoring until the preferred option wins.",
+   "time_cost": "medium",
+   "group": "either",
+   "steps": [
+    "List the options.",
+    "Name the criteria that matter.",
+    "Assign weights before looking at scores.",
+    "Score each option on each criterion.",
+    "Multiply and sum.",
+    "Check whether a reasonable change in weights changes the winner."
+   ],
+   "pairs_with": [
+    "decide.even-swaps",
+    "decide.gut-check"
+   ],
+   "borrowed_from": "pantarhei-decide"
+  },
+  {
+   "slug": "frame.iceberg",
+   "name": "Iceberg model",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Systems thinking tradition (Senge; Meadows)",
+    "work": "The Fifth Discipline; Thinking in Systems",
+    "type": "practitioner",
+    "year": "1990; 2008",
+    "note": "Commonly attributed to the systems thinking tradition; no single canonical originator."
+   },
+   "source_verified": false,
+   "summary": "Look below the event to the pattern, below the pattern to the structure producing it, below the structure to the beliefs that hold the structure in place.",
+   "key_question": "Is this an event, a pattern, a structure or a belief?",
+   "status": "complete",
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "this keeps happening",
+    "we fix it and it comes back",
+    "what's the underlying cause",
+    "look beyond the symptom"
+   ],
+   "produces": "four layers written out: the event, the pattern, the structure and the beliefs behind it",
+   "failure_mode": "Stopping at the pattern layer and calling a trend a cause.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "solve.causal-loops",
+    "solve.leverage-points"
+   ],
+   "borrowed_from": "pantarhei-reframe"
+  },
+  {
+   "slug": "frame.polarity",
+   "name": "Problem or polarity?",
+   "kind": "model",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Barry Johnson",
+    "work": "Polarity Management",
+    "type": "practitioner",
+    "year": 1992
+   },
+   "source_verified": false,
+   "summary": "Some 'problems' are pairs of interdependent goods (stability and change, centralised and local) that cannot be solved, only managed over time. Treating a polarity as a problem produces oscillation.",
+   "key_question": "Is this a problem with a solution, or a tension to manage indefinitely?",
+   "status": "complete",
+   "tension_with": [
+    "solve.issue-tree"
+   ],
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "we keep swinging back and forth",
+    "centralise or decentralise",
+    "this debate never ends",
+    "both sides have a point"
+   ],
+   "produces": "the two poles named, the upside and downside of each, and early warning signs for over-correcting",
+   "failure_mode": "Labelling a real problem with a single answer as a polarity to avoid deciding.",
+   "time_cost": "quick",
+   "group": "either",
+   "pairs_with": [
+    "create.janusian",
+    "decide.scenarios"
+   ],
+   "borrowed_from": "pantarhei-reframe"
+  },
+  {
+   "slug": "frame.reframing-canvas",
+   "name": "Frame-storming",
+   "kind": "method",
+   "mode": "lens",
+   "evidence_class": "heuristic",
+   "origin": {
+    "author": "Thomas Wedell-Wedellsborg",
+    "work": "What's Your Problem?",
+    "type": "practitioner",
+    "year": 2020
+   },
+   "source_verified": false,
+   "summary": "Before solving, look outside the frame, rethink the goal, examine bright spots, look in the mirror at your own role, and take the other parties' perspective. Fast, repeated reframing, not lengthy diagnosis.",
+   "key_question": "Is this the right problem to be solving at all?",
+   "status": "complete",
+   "tension_with": [
+    "solve.issue-tree"
+   ],
+   "stages": [
+    "frame"
+   ],
+   "use_when": [
+    "are we solving the right problem",
+    "reframe this problem",
+    "everyone agrees on the problem too fast",
+    "the obvious fix keeps failing"
+   ],
+   "produces": "two to four alternative framings of the problem, with the one to test next marked",
+   "failure_mode": "Turning the five moves into a long diagnosis instead of quick passes.",
+   "time_cost": "quick",
+   "group": "either",
+   "steps": [
+    "Write the problem as currently stated.",
+    "Look outside the frame: what has been left out of the picture?",
+    "Rethink the goal: is there a better objective behind the stated one?",
+    "Look for bright spots: where is the problem absent or already solved?",
+    "Look in the mirror: how does your own role contribute?",
+    "Take the other parties' view: how would they describe the problem?",
+    "Choose the most promising reframe and decide how to test it quickly."
+   ],
+   "pairs_with": [
+    "frame.how-might-we",
+    "frame.problem-statement"
+   ],
+   "borrowed_from": "pantarhei-reframe"
+  }
+ ]
+}

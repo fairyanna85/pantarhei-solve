@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="428" viewBox="0 0 1200 428" role="img" aria-label="The Case Board: a sample output of Panta Rhei solve">
+<rect width="1200" height="428" rx="14" fill="#14161A"/>
+<circle cx="34" cy="34" r="6" fill="#4FD1BF"/><text x="52" y="39" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#A9B0BC" letter-spacing="1">THE CASE BOARD</text>
+<text x="40" y="82" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">CASE · Partner escalations up 40% since Q2</text>
+<text x="40" y="104" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#4FD1BF" xml:space="preserve">───────────────────────────────────────────────────────────────</text>
+<text x="40" y="126" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">TREE (MECE)                          </text>
+<text x="40" y="148" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">├─ More issues created   → volume? new partners? new product surface?</text>
+<text x="40" y="170" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">├─ Same issues, escalated more → routing change? SLA change? trust?</text>
+<text x="40" y="192" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#4FD1BF" xml:space="preserve">└─ Measurement changed   → definition of &quot;escalation&quot; altered in Q2?</text>
+<text x="40" y="214" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#4FD1BF" xml:space="preserve"></text>
+<text x="40" y="236" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">HYPOTHESES                       evidence for / against     cheapest test</text>
+<text x="40" y="258" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">1 ● Q2 routing change sends L1 to engineering   +timing, +is/is-not   pull 20 tickets pre/post</text>
+<text x="40" y="280" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">2   New partner cohort less trained             +volume  −old partners also up   split by cohort</text>
+<text x="40" y="302" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">3   Definition changed                          ?                      ask the dashboard owner</text>
+<text x="40" y="324" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#4FD1BF" xml:space="preserve"></text>
+<text x="40" y="346" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">BINDING CONSTRAINT   Triage capacity (theory of constraints): everything else waits on it.</text>
+<text x="40" y="368" font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" fill="#F6F4EF" xml:space="preserve">CEILING              Medium. Timing fits H1; no test run yet.</text>
+</svg>

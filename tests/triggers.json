@@ -1,0 +1,209 @@
+{
+  "cases": [
+    {
+      "text": "Why does our deploy keep slipping every sprint?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Break this problem down: churn went up 4 points last quarter",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What's the root cause of the constant escalations from partners?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "How should I approach reducing our cloud costs by 30%?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Build me an issue tree for why revenue is flat",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Diagnose why my sleep has gotten worse since I moved",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Our competitor just cut prices 20%, how do we respond strategically?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What's the capital of Australia?",
+      "expect": "none"
+    },
+    {
+      "text": "Fix this bug in my Python function",
+      "expect": "none"
+    },
+    {
+      "text": "Convert this PDF to Word",
+      "expect": "none"
+    },
+    {
+      "text": "Schedule a meeting with Mark on Friday",
+      "expect": "none"
+    },
+    {
+      "text": "Summarize this article",
+      "expect": "none"
+    },
+    {
+      "text": "Write a SQL query that groups sales by region",
+      "expect": "none"
+    },
+    {
+      "text": "Translate this paragraph into French",
+      "expect": "none"
+    },
+    {
+      "text": "Why do our customer support tickets keep reappearing after we close them?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Help me structure this problem: sales are fine but margins are shrinking",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What's the root cause of the repeated stockouts at our warehouse?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Diagnose why our newsletter open rate fell from 40% to 22%",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Break down how to cut our onboarding time in half",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Build an issue tree for why employee turnover is high on the night shift",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "How do I tackle a 200-person reorg that has no clear owner?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Why does the same type of customer complaint keep happening?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "I need a plan of attack for getting my team onto a new tool",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Revenue is down 15% year over year. Break it into drivers for me",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Do a driver tree for profit at my small cafe",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Help me diagnose why my sourdough keeps coming out dense",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What's driving the rise in our customer acquisition cost?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Structure the problem of declining attendance at our community events",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Why do we keep missing our Q3 targets even when we plan carefully?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "How should I approach a quality problem where defects are up but nothing changed?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What are the likely causes of the slow approval turnaround in our procurement process, and how would we test each?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "Hypothesis-driven analysis please: why did conversion drop after the redesign?",
+      "expect": "pantarhei-solve"
+    },
+    {
+      "text": "What's 17% of 2,340?",
+      "expect": "none"
+    },
+    {
+      "text": "Write a Python script that renames files by date",
+      "expect": "none"
+    },
+    {
+      "text": "What time is it in Tokyo?",
+      "expect": "none"
+    },
+    {
+      "text": "Merge these two PDFs into one",
+      "expect": "none"
+    },
+    {
+      "text": "Draft a Word document with a project status template",
+      "expect": "none"
+    },
+    {
+      "text": "What does the word 'ephemeral' mean?",
+      "expect": "none"
+    },
+    {
+      "text": "Move my 3pm meeting to Thursday",
+      "expect": "none"
+    },
+    {
+      "text": "Review this pull request for security issues",
+      "expect": "none"
+    },
+    {
+      "text": "Who won the World Cup in 2014?",
+      "expect": "none"
+    },
+    {
+      "text": "Explain what a mutex is",
+      "expect": "none"
+    },
+    {
+      "text": "Rewrite this email to sound more polite",
+      "expect": "none"
+    },
+    {
+      "text": "Give me a recipe for banana bread",
+      "expect": "none"
+    },
+    {
+      "text": "Convert 5 miles to kilometres",
+      "expect": "none"
+    },
+    {
+      "text": "Why is my React component re-rendering twice?",
+      "expect": "none"
+    },
+    {
+      "text": "Proofread this paragraph for typos",
+      "expect": "none"
+    },
+    {
+      "text": "Create a spreadsheet of my monthly expenses",
+      "expect": "none"
+    },
+    {
+      "text": "Find free time on my calendar next week",
+      "expect": "none"
+    },
+    {
+      "text": "Summarize the plot of Hamlet",
+      "expect": "none"
+    },
+    {
+      "text": "I need to figure out why my team is unhappy and what to do",
+      "expect": "pantarhei-solve",
+      "contested": true
+    }
+  ]
+}

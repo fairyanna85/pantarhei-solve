@@ -1,0 +1,17 @@
+{
+  "name": "pantarhei-solve",
+  "description": "Structured problem-solving and diagnosis skill: issue trees, root cause, ranked hypotheses.",
+  "version": "0.1.0",
+  "author": {
+    "name": "fairyanna85"
+  },
+  "homepage": "https://github.com/fairyanna85/pantarhei-solve",
+  "repository": "https://github.com/fairyanna85/pantarhei-solve",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-skills",
+    "thinking",
+    "mental-models"
+  ]
+}

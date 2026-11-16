@@ -1,0 +1,17 @@
+{
+  "name": "pantarhei-solve",
+  "owner": {
+    "name": "fairyanna85"
+  },
+  "metadata": {
+    "description": "Structured problem-solving and diagnosis skill: issue trees, root cause, ranked hypotheses."
+  },
+  "plugins": [
+    {
+      "name": "pantarhei-solve",
+      "source": "./",
+      "description": "Structured problem-solving and diagnosis skill: issue trees, root cause, ranked hypotheses.",
+      "version": "0.1.0"
+    }
+  ]
+}
