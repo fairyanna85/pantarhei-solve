@@ -1,0 +1,31 @@
+# Copy to <skill-repo>/.github/workflows/release.yml. On tag vX.Y.Z: validate in release mode, build the
+# ZIP (one top-level folder named after the skill, SKILL.md at its root, no tests/.github/blocklists),
+# attach it to the GitHub Release.
+name: release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      SKILL: ${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: fairyanna85/pantarhei-core
+          path: .core
+          ref: ${{ vars.CORE_TAG || 'main' }}
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install jsonschema pyyaml
+      - name: Build ZIP
+        run: python .core/scripts/build_zip.py --root . --skill "$SKILL" --out dist
+      - name: Validate (release rules)
+        run: python .core/scripts/validate.py --root . --core .core --release
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/${{ env.SKILL }}.zip
