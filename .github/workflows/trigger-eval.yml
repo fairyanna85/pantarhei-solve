@@ -1,0 +1,21 @@
+# Copy to <skill-repo>/.github/workflows/trigger-eval.yml. Needs repo secret ANTHROPIC_API_KEY.
+name: trigger-eval
+on:
+  workflow_dispatch:
+  push:
+    paths: ['skills/*/SKILL.md']
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: fairyanna85/pantarhei-core
+          path: .core
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pyyaml
+      - run: python .core/scripts/trigger_eval.py --skills . --mode both --models claude-sonnet-5-5,claude-haiku-5-5
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
