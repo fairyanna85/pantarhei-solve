@@ -1,0 +1,17 @@
+# Copy to <skill-repo>/.github/workflows/validate.yml
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: fairyanna85/pantarhei-core
+          path: .core
+          ref: ${{ vars.CORE_TAG || 'main' }}
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install jsonschema pyyaml
+      - run: python .core/scripts/validate.py --root . --core .core
