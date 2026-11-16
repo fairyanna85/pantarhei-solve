@@ -15,8 +15,6 @@ A problem-solving and root-cause diagnosis skill for Claude, Claude Code and Her
 
 Asked why something is happening, an AI tends to offer one plausible story. Panta Rhei Solve builds a case board instead: a MECE issue tree, three to five ranked hypotheses with evidence for and against, and the cheapest test that tells the top two apart. You get the likely cause, the binding constraint and an honest statement of how sure the evidence lets you be.
 
-<p align="center"><img src="assets/demo.gif" alt="A Solve session: a metric problem split into a MECE tree, three ranked hypotheses with tests, and the binding constraint" width="85%"></p>
-
 ## Try it
 
 Say any of these after installing:
