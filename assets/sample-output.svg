@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="785" height="280" viewBox="0 0 785 280">
+<rect width="785" height="280" rx="8" fill="#14161A"/>
+<g font-family="'JetBrains Mono','DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#F6F4EF">
+<text x="18" y="27" xml:space="preserve">CASE · Partner escalations up 40% since Q2</text>
+<text x="18" y="45" xml:space="preserve">───────────────────────────────────────────────────────────────</text>
+<text x="18" y="63" xml:space="preserve">TREE (MECE)                          </text>
+<text x="18" y="81" xml:space="preserve">├─ More issues created   → volume? new partners? new product surface?</text>
+<text x="18" y="99" xml:space="preserve">├─ Same issues, escalated more → routing change? SLA change? trust?</text>
+<text x="18" y="117" xml:space="preserve">└─ Measurement changed   → definition of &quot;escalation&quot; altered in Q2?</text>
+<text x="18" y="135" xml:space="preserve"></text>
+<text x="18" y="153" xml:space="preserve">HYPOTHESES                       evidence for / against     cheapest test</text>
+<text x="18" y="171" xml:space="preserve">1 ● Q2 routing change sends L1 to engineering   +timing, +is/is-not   pull 20 tickets pre/post</text>
+<text x="18" y="189" xml:space="preserve">2   New partner cohort less trained             +volume  −old partners also up   split by cohort</text>
+<text x="18" y="207" xml:space="preserve">3   Definition changed                          ?                      ask the dashboard owner</text>
+<text x="18" y="225" xml:space="preserve"></text>
+<text x="18" y="243" xml:space="preserve">BINDING CONSTRAINT   Triage capacity (theory of constraints): everything else waits on it.</text>
+<text x="18" y="261" xml:space="preserve">CEILING              Medium. Timing fits H1; no test run yet.</text>
+</g>
+</svg>
